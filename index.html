@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REELOVA — AI Cinematic Short-Drama Content Tool</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #e8e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d0d1a 0%, #1a0a2e 100%);
+      border-bottom: 1px solid #2a1a4a;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      background: linear-gradient(90deg, #c084fc, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p.tagline {
+      margin-top: 0.75rem;
+      font-size: 1.15rem;
+      color: #a0a0c0;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.3rem 0.9rem;
+      background: rgba(129, 140, 248, 0.15);
+      border: 1px solid rgba(129, 140, 248, 0.35);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: #818cf8;
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section { margin-bottom: 3rem; }
+
+    section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #c084fc;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #2a1a4a;
+    }
+
+    section p {
+      color: #b0b0cc;
+      margin-bottom: 0.75rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .feature-card {
+      background: #111120;
+      border: 1px solid #1e1e3a;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .feature-card .icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .feature-card h3 { font-size: 1rem; font-weight: 600; color: #e0e0f0; margin-bottom: 0.35rem; }
+    .feature-card p  { font-size: 0.9rem; color: #8080a0; margin: 0; }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.75rem;
+    }
+
+    .platforms span {
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .p-tiktok   { background: rgba(0,242,234,0.1); border: 1px solid rgba(0,242,234,0.3); color: #00f2ea; }
+    .p-instagram{ background: rgba(193,53,132,0.1); border: 1px solid rgba(193,53,132,0.3); color: #e1306c; }
+    .p-youtube  { background: rgba(255,0,0,0.1);    border: 1px solid rgba(255,0,0,0.3);    color: #ff4444; }
+    .p-facebook { background: rgba(66,103,178,0.1); border: 1px solid rgba(66,103,178,0.3); color: #6b8fd8; }
+
+    .langs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.75rem;
+    }
+
+    .langs span {
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: rgba(56,189,248,0.1);
+      border: 1px solid rgba(56,189,248,0.25);
+      color: #38bdf8;
+    }
+
+    .contact-box {
+      background: #111120;
+      border: 1px solid #2a1a4a;
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+
+    .contact-box a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid #1a1a2e;
+      color: #50507a;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: #6060a0;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover { color: #818cf8; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>REELOVA</h1>
+  <p class="tagline">AI-powered cinematic short-drama content, published at scale.</p>
+  <span class="badge">Developer App: Qasem MCP</span>
+</header>
+
+<main>
+
+  <section>
+    <h2>What is REELOVA?</h2>
+    <p>
+      REELOVA is an automated content distribution system that produces and publishes
+      AI-generated short-drama videos across major social media platforms — simultaneously,
+      in multiple languages, across dedicated channels.
+    </p>
+    <p>
+      The developer application powering REELOVA's platform integrations is named
+      <strong>Qasem MCP</strong>. It handles authenticated API access to social platforms
+      on behalf of the content creator (the app owner), enabling fully automated publishing
+      without any third-party user data collection.
+    </p>
+  </section>
+
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">🎬</div>
+        <h3>AI Short-Drama Production</h3>
+        <p>Cinematic short-form episodes generated and queued for multi-platform release.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌍</div>
+        <h3>Multi-Language Publishing</h3>
+        <p>Content localised and published in English, Arabic, German, and Spanish.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Performance Analytics</h3>
+        <p>Automatic insights fetching and virality scoring per post across all channels.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">✅</div>
+        <h3>Human-in-the-Loop Approval</h3>
+        <p>Every post passes through a Telegram-based approval flow before going live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Platforms</h2>
+    <p>REELOVA publishes to 16 channels across four platforms:</p>
+    <div class="platforms">
+      <span class="p-tiktok">TikTok</span>
+      <span class="p-instagram">Instagram</span>
+      <span class="p-youtube">YouTube</span>
+      <span class="p-facebook">Facebook</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <div class="langs">
+      <span>🇬🇧 English</span>
+      <span>🇸🇦 Arabic</span>
+      <span>🇩🇪 German</span>
+      <span>🇪🇸 Spanish</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>About This App</h2>
+    <p>
+      <strong>Qasem MCP</strong> is a private developer application owned and operated by a
+      single creator. It does not offer public sign-up, does not collect personal data from
+      platform users, and acts solely as an automation layer for the app owner's own accounts.
+    </p>
+    <p>
+      All content uploaded through this application is created by and belongs to the app owner.
+      Platform API access is used exclusively for content management on the owner's own channels.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p>For questions about this application or its data practices, contact the developer:</p>
+      <p style="margin-top:0.75rem;">
+        📧 <a href="mailto:qasemalzoubi50@gmail.com">qasemalzoubi50@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    &copy; 2025 REELOVA &nbsp;|&nbsp;
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </p>
+</footer>
+
+</body>
+</html>
