@@ -153,6 +153,22 @@
     }
 
     footer a:hover { color: #818cf8; }
+
+    .tiktok-btn {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.6rem 1.6rem;
+      background: #000;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      border: 1px solid #444;
+    }
+
+    .tiktok-btn:hover { background: #1a1a1a; }
   </style>
 </head>
 <body>
@@ -160,7 +176,10 @@
 <header>
   <h1>REELOVA</h1>
   <p class="tagline">AI-powered cinematic short-drama content, published at scale.</p>
-  <span class="badge">Developer App: Qasem MCP</span>
+  <span class="badge">Developer App: Qasem MCP</span><br>
+  <a class="tiktok-btn" href="https://www.tiktok.com/v2/auth/authorize/?client_key=sbaw3fvz9tl8vjqb1v&scope=user.info.basic%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Freelova.duckdns.org%2Ftiktok%2Fcallback&state=reelova-demo">
+    &#9654; Connect with TikTok
+  </a>
 </header>
 
 <main>
@@ -168,15 +187,16 @@
   <section>
     <h2>What is REELOVA?</h2>
     <p>
-      REELOVA is an automated content distribution system that produces and publishes
-      AI-generated short-drama videos across major social media platforms — simultaneously,
-      in multiple languages, across dedicated channels.
+      REELOVA is a content publishing platform that helps creators produce and distribute
+      short-drama videos across major social media platforms in multiple languages.
     </p>
     <p>
       The developer application powering REELOVA's platform integrations is named
-      <strong>Qasem MCP</strong>. It handles authenticated API access to social platforms
-      on behalf of the content creator (the app owner), enabling fully automated publishing
-      without any third-party user data collection.
+      <strong>Qasem MCP</strong>. For TikTok, it uses the video.upload (draft) flow —
+      videos are delivered to the creator's TikTok inbox, where the creator reviews the
+      content and chooses to publish manually from inside the TikTok app. The creator
+      stays in full control of what goes live. No data from TikTok users is collected
+      or shared with third parties.
     </p>
   </section>
 
